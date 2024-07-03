@@ -1,0 +1,32 @@
+.hidden {
+  visibility: hidden;
+}
+.display-none {
+  display: none;
+}
+.letters-wrapper {
+  max-width: 500px;
+}
+.letters-row {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  gap: 2px;
+}
+.word-wrapper {
+  display: flex;
+  gap: 2px;
+}
+.blank-letter {
+  border-bottom: 1px solid black;
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: center;
+}
+.blank-letter p {
+  margin: 0;
+}
+.blank-letter.no-border {
+  border-bottom: none;
+}

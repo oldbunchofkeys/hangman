@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="/assets/style.css" />
+    <title>Frontend Mentor | Hangman game</title>
+  </head>
+  <body>
+    <!-- Start screen start -->
+
+    <!-- How to play -->
+
+    <!-- Start screen end -->
+
+    <!-- How to play screen start -->
+
+    <!-- How to Play 01 Choose a category First, choose a word category, like animals
+    or movies. The computer then randomly selects a secret word from that topic
+    and shows you blanks for each letter of the word. 02 Guess letters Take
+    turns guessing letters. The computer fills in the relevant blank spaces if
+    your guess is correct. If it's wrong, you lose some health, which empties
+    after eight incorrect guesses. 03 Win or lose You win by guessing all the
+    letters in the word before your health runs out. If the health bar empties
+    before you guess the word, you lose. -->
+
+    <!-- How to play screen end -->
+
+    <!-- Pick a category start -->
+
+    <div id="category-selection-wrapper">
+      <h2>Pick a Category</h2>
+      <ul style="list-style-type: none; display: flex; gap: 20px">
+        <li><button id="movies-button">Movies</button></li>
+        <li><button id="tv_shows-button">TV Shows</button></li>
+        <li><button id="countries-button">Countries</button></li>
+        <li><button id="capital_cities-button">Capital Cities</button></li>
+        <li><button id="animals-button">Animals</button></li>
+        <li><button id="sports-button">Sports</button></li>
+      </ul>
+    </div>
+    <div id="game-content-wrapper" class="hidden">
+      <h3>You Picked "<span id="selected-category"></span>" for a category.</h3>
+      <p>You have <span id="guess-number">8</span> guesses remaining.</p>
+      <div id="word-wrapper" class="word-wrapper"></div>
+      <div class="submission-wrapper">
+        <form action="#">
+          <input type="text" name="text" id="text-input" />
+          <input type="submit" name="submit" id="submit" />
+        </form>
+        <div class="letters-wrapper">
+          <ul class="letters-row">
+            <li><button>q</button></li>
+            <li><button>w</button></li>
+            <li><button>e</button></li>
+            <li><button>r</button></li>
+            <li><button>t</button></li>
+            <li><button>y</button></li>
+            <li><button>u</button></li>
+            <li><button>i</button></li>
+            <li><button>o</button></li>
+            <li><button>p</button></li>
+          </ul>
+          <ul class="letters-row">
+            <li><button>a</button></li>
+            <li><button>s</button></li>
+            <li><button>d</button></li>
+            <li><button>f</button></li>
+            <li><button>g</button></li>
+            <li><button>h</button></li>
+            <li><button>j</button></li>
+            <li><button>k</button></li>
+            <li><button>l</button></li>
+          </ul>
+          <ul class="letters-row" s>
+            <li><button>z</button></li>
+            <li><button>x</button></li>
+            <li><button>c</button></li>
+            <li><button>v</button></li>
+            <li><button>b</button></li>
+            <li><button>n</button></li>
+            <li><button>m</button></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pick a category end -->
+
+    <!-- Game screen start -->
+
+    <!-- Movies/TV Shows/Countries/Capital Cities/Animals/Sports a b c d e f g h i j
+    k l m n o p q r s t u v w x y z Paused/You Win/You Lose Continue Play again!
+    New category Quit game -->
+
+    <!-- Game screen end -->
+    <script src="/assets/index.js"></script>
+  </body>
+</html>
